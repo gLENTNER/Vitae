@@ -22,11 +22,11 @@ view     = open
 
 
 
-$(view):
-	$(view) $(Output)$(Main).pdf
-
 cv: $(Academic) $(view)
 	cp $(Output)$(Main).pdf $(Academic)$(cv).pdf
+
+$(view):
+	$(view) $(Output)$(Main).pdf
 
 
 
