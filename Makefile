@@ -25,7 +25,7 @@ view:
 	$(view) $(Output)$(Main).pdf
 
 cv: $(Academic)
-	cp $(Output)$(Main).pdf $(Academic)$(CV).pdf
+	cp $(Output)$(Main).pdf $(Academic)$(cv).pdf
 
 
 clean:
