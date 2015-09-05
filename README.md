@@ -1,4 +1,4 @@
 # Curriculum Vitae
 
 ###Versions:
-	* Academic - September 2015
+* Academic - September 2015
