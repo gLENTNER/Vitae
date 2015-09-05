@@ -1,3 +1,6 @@
 # ignore temporary files
 *.swp
 *~
+
+# ignore Output/ directory
+Output/
