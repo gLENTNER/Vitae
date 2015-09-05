@@ -9,7 +9,7 @@
 Latex    = pdflatex
 Output   = Output/
 Source   = Source/
-Main     = Main.tex
+Main     = Main
 
 Academic = Academic/
 cv       = lentner-cv-2015.9
@@ -19,13 +19,13 @@ Build    = --output-directory $(Output)
 view     = open
 
 $(Academic): $(Academic)$(Source)*.tex
-	$(Latex) $(Build) $(Academic)$(Source)$(Main)
+	$(Latex) $(Build) $(Academic)$(Source)$(Main).tex
 
 view:
 	$(view) $(Output)$(Main).pdf
 
 cv: $(Academic)
-	cp $(Output)/$(basename $(Main)).pdf $(Academic)$(CV).pdf
+	cp $(Output)$(Main).pdf $(Academic)$(CV).pdf
 
 
 clean:
