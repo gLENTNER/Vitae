@@ -18,15 +18,26 @@ Build    = --output-directory $(Output)
 
 view     = open
 
+
+
+
+
+$(view):
+	$(view) $(Output)$(Main).pdf
+
+cv: $(Academic) $(view)
+	cp $(Output)$(Main).pdf $(Academic)$(cv).pdf
+
+
+
+
+
 $(Academic): $(Academic)$(Source)*.tex
 	$(Latex) $(Build) $(Academic)$(Source)$(Main).tex
 
-view:
-	$(view) $(Output)$(Main).pdf
-
-cv: $(Academic)
-	cp $(Output)$(Main).pdf $(Academic)$(cv).pdf
 
 
 clean:
 	@del $(Output)$(Main)*
+
+.PHONY: $(Academic)
