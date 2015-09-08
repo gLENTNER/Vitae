@@ -1,7 +1,7 @@
 #
 # Copyright (c) Geoffrey Lentner 2015. All Rights Reserved.
 # Makefile
-# 
+#
 # Build PDFs from LaTex source for different versions of CV.
 #
 
